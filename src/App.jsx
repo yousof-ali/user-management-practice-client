@@ -63,7 +63,7 @@ function App() {
           User Management System
         </h2>
         <div className="my-6 ml-3 md:ml-12">
-          <Link to={'/users'} className="btn  bg-green-300  hover:bg-green-100"><span><FaChevronLeft /></span><span>User</span></Link>
+          <Link to={'/users'} className="btn  bg-green-300  hover:bg-green-100"><span><FaChevronLeft /></span><span>Users</span></Link>
         </div>
         <div className="text-center my-6">
           <h2 className="text-2xl">New User</h2>
