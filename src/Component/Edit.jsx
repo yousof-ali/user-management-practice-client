@@ -25,7 +25,7 @@ const Edit = () => {
     const name = from.name.value;
     const updateUser = { name, email, gender, status };
 
-    fetch(`http://localhost:5000/edit/${userData._id}`, {
+    fetch(`http://user-management-practice-server.vercel.app/edit/${userData._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -150,7 +150,7 @@ const Edit = () => {
           <div className="flex items-center justify-center ">
             <input
               type="submit"
-              value={"create"}
+              value={"Edit"}
               className="btn bg-green-300 my-6 hover:bg-green-100 w-full md:w-1/2"
             />
           </div>

@@ -29,7 +29,7 @@ function App() {
     
 
 
-    fetch('http://localhost:5000/user',{
+    fetch('http://user-management-practice-server.vercel.app/user',{
       method:"POST",
       headers:{
         'content-type':'application/json'
