@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 const Users = () => {
   const loderData = useLoaderData();
   const [users,setUsers] = useState(loderData)
+  console.log(users)
 
 
   const handleDelete = (id) => {
@@ -22,7 +23,7 @@ const Users = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://user-management-practice-server.vercel.app/delete/${id}`, {
+        fetch(`http://localhost:5000/delete/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -99,6 +100,7 @@ const Users = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
