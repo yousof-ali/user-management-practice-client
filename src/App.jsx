@@ -29,7 +29,7 @@ function App() {
     
 
 
-    fetch('http://localhost:5000/user',{
+    fetch('https://user-management-practice-server.onrender.com/user',{
       method:"POST",
       headers:{
         'content-type':'application/json'

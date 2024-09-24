@@ -14,15 +14,16 @@ const router = createBrowserRouter([
     path: "/",
     element: <App></App>
   },
+
   {
     path:'/users',
     element:<Users></Users>,
-    loader: () => fetch('http://localhost:5000/users')
+    loader: () => fetch('https://user-management-practice-server.onrender.com/users')
   },
   {
     path:'/edit/:id',
     element:<Edit></Edit>,
-    loader:({params}) => fetch(`http://localhost:5000/user/${params.id}`)
+    loader:({params}) => fetch(`https://user-management-practice-server.onrender.com/user/${params.id}`)
   }
 ]);
 

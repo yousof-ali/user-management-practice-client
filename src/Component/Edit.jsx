@@ -25,7 +25,7 @@ const Edit = () => {
     const name = from.name.value;
     const updateUser = { name, email, gender, status };
 
-    fetch(`http://localhost:5000/edit/${userData._id}`, {
+    fetch(`https://user-management-practice-server.onrender.com/edit/${userData._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
